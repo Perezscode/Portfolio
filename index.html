@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paola Perez Portfolio - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#FFFF] text-black font-sans">
+
+    <header class="flex justify-between items-center px-6 py-4 border-b border-gray-200">
+        <h1 class="text-2xl font-bold tracking-tight">PAOLA <span class="text-red-700">PEREZ</span></h1>
+
+        <!-- Hamburger Icon (Visible on Small Screens) -->
+        <button id="menu-toggle" class="sm:hidden text-red-700 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <!-- Navigation Links (Desktop Only) -->
+        <nav id="navbar" class="hidden sm:flex space-x-6 text-sm font-semibold uppercase">
+            <a href="#about" class="hover:text-red-700">About</a>
+            <a href="#projects" class="hover:text-red-700">Projects</a>
+            <a href="#resume" class="hover:text-red-700">Resume</a>
+            <a href="#certifications" class="hover:text-red-700">Certifications</a>
+            <a href="#contact" class="hover:text-red-700">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu (Vertical Row Layout) -->
+    <div id="mobile-menu" class="sm:hidden hidden flex flex-col items-center text-center px-6 pb-4 space-y-3 text-sm font-semibold uppercase">
+        <a href="#about" class="hover:text-red-700 border-b pb-1">About</a>
+        <a href="#projects" class="hover:text-red-700 border-b pb-1">Projects</a>
+        <a href="#resume" class="hover:text-red-700 border-b pb-1">Resume</a>
+        <a href="#certifications" class="hover:text-red-700 border-b pb-1">Certifications</a>
+        <a href="#contact" class="hover:text-red-700">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="flex flex-col lg:flex-row items-center justify-center px-6 sm:px-12 py-20 fade-in gap-10 border-b border-gray-200">
+
+        <!-- Text Content -->
+        <div class="text-center lg:text-left max-w-xl">
+            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Hello, I’m Paola!</h2>
+            <p class="text-lg sm:text-xl mb-8 text-gray-800">Web Developer and Designer based in New York City.</p>
+            <a href="#projects" class="inline-block border-2 bg-[#1D1616] text-black px-6 py-3 font-medium hover:bg-red-700 text-white transition">VIEW MY WORK</a>
+        </div>
+        <!-- Image -->
+        <div class="flex-shrink-1">
+            <img src="img/headshot.png" alt="Paola Perez" class="w-[400px] sm:w-[450px] lg:w-[600px] object-contain">
+        </div>
+
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <section id="about" class=" py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">About Me</h2>
+        <p class="text-lg text-gray-800 max-w-3xl mb-8 leading-relaxed">I'm a visual artist and aspiring front-end developer based in New York City and Currently pursuing a degree in Computer Information Systems.<br><br>
+            I bring a strong foundation in fine arts, spanning drawing, painting, and digital illustration into the world of web development.<br><br>
+            My transition into tech stems from a deep interest in how digital tools shape user experiences. I now focus on building interactive, visually intentional web projects that balance aesthetic and functionality.
+            As an immigrant, my design approach is shaped by themes of resilience, adaptability, and inclusivity.<br><br>
+            I strive to create interfaces that feel human-centered and accessible.
+            My current focus is front-end development, UX/UI design, and crafting work that bridges art, technology, and storytelling. I'm open to internships, freelance work, or collaborative opportunities that value creativity and impact.</p></p>
+        <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl">“Sometimes I feel like I’m building my future the same way I build my paintings... layer by layer.”</div>
+
+    </section>
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <section id="projects" class="py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
+        <h2 class="text-3xl font-bold mb-10 uppercase tracking-wide text-red-700">Projects</h2>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition">
+                <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                <p class="text-gray-700 mb-4">A custom personal portfolio built using HTML, Tailwind, and JavaScript. Designed for recruiters with elegant, responsive design.</p>
+                <p class="text-sm text-gray-500 mb-4">Tech: HTML, Tailwind CSS, JavaScript</p>
+                <div class="space-x-4">
+                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                </div>
+            </div>
+            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                <h3 class="text-xl font-semibold mb-2">The Frame</h3>
+                <p class="text-gray-700 mb-4">A layout-focused HTML project for structured interface design. Emphasizes content flow and presentation.</p>
+                <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript</p>
+                <div class="space-x-4">
+                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                    <a href="https://github.com/your-username/The-Frame" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                </div>
+            </div>
+            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                <h3 class="text-xl font-semibold mb-2">NFT Preview Card</h3>
+                <p class="text-gray-700 mb-4">A responsive CSS component previewing an NFT design. Styled cleanly to match modern UI cards.</p>
+                <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS</p>
+                <div class="space-x-4">
+                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                    <a href="https://github.com/your-username/nft-preview-card-component-main" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                </div>
+            </div>
+            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                <h3 class="text-xl font-semibold mb-2">Frontend Store</h3>
+                <p class="text-gray-700 mb-4">A mock store interface using clean HTML. Created to practice layout and navigation concepts.</p>
+                <p class="text-sm text-gray-500 mb-4">Tech: HTML, Bootstrap, CSS</p>
+                <div class="space-x-4">
+                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                    <a href="https://github.com/your-username/Frontend-Store" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Resume Section -->
+    <section id="resume" class=" py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Resume</h2>
+        <p class="text-gray-800 mb-8 text-lg max-w-2xl">View or download my resume for a detailed look at my skills, education, and development experience.</p>
+        <a href="files/Paola-Gil-Resume.pdf" download class="inline-block bg-black text-white px-6 py-3 rounded hover:bg-red-700 transition">Download Resume</a>
+        <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">HTML5 & CSS3</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">JavaScript (ES6+)</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">React</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Tailwind CSS</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Bootstrap</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Git & GitHub</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Responsive Design</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">UX/UI Fundamentals</div>
+            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Systems Analysis & Design</div>
+        </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Certification Section -->
+    <section id="certifications" class="py-20 px-6 sm:px-12 fade-in">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Certifications & Badges</h2>
+        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+            Here are some of the certifications I've completed to build my technical and leadership skills.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+
+            <!-- CCNA: Cisco -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">CCNA: Introduction to Networks</h3>
+                <p class="text-gray-600 text-sm mb-2">Cisco — Issued Apr 2025</p>
+                <p class="text-xs italic mb-2">Skills: Network Security, IPv6, Subnetting</p>
+                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+
+            <!-- React + TypeScript -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">React + TypeScript</h3>
+                <p class="text-gray-600 text-sm mb-2">Udemy — Issued Apr 2025</p>
+                <p class="text-xs italic mb-2">Skills: React.js, JavaScript, TypeScript</p>
+                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+
+            <!-- NSLS: Orientation and Leadership -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Leadership Training</h3>
+                <p class="text-gray-600 text-sm mb-2">NSLS — Issued Feb 2025</p>
+                <p class="text-xs italic mb-2">Skills: Collaboration, Critical Thinking, Teamwork</p>
+                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+
+            <!-- Responsive Web Design -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Responsive Web Design</h3>
+                <p class="text-gray-600 text-sm mb-2">FreeCodeCamp — Issued May 2022</p>
+                <p class="text-xs italic mb-2">Skills: Responsive Design, HTML/CSS</p>
+                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+
+            <!-- Meta: Front-End Development -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Intro to Front-End Development</h3>
+                <p class="text-gray-600 text-sm mb-2">Meta — Issued Jun 2025</p>
+                <p class="text-xs italic mb-2">Skills: React.js, Front-End Development</p>
+                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+
+            <!-- Microsoft Badges -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Microsoft Office Badges</h3>
+                <p class="text-gray-600 text-sm mb-2">Cengage — Issued Jul 2025</p>
+                <p class="text-xs italic mb-2">Excel & Word Introductory Credentials</p>
+                <a href="https://achievement.cengage.com/ffdedf4c-761d-422b-ad53-c5f1202858de#acc.xceSy4K0" class="text-red-700 font-medium underline">Show credential</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-20 px-6 sm:px-12 fade-in">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Leadership & Academic Archievements</h2>
+        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+            Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+            <!-- NSLS Presidential Member -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">NSLS Inducted Presidential member</h3>
+                <p class="text-gray-600 text-sm mb-2">National Society of Leadership and Success</p>
+                <p class="text-xs italic mb-2">July 2025</p>
+                <a href="#" class="text-red-700 font-medium underline">View</a>
+            </div>
+
+            <!-- NSLS-->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Honor's Program Member</h3>
+                <p class="text-gray-600 text-sm mb-2">Monroe University</p>
+                <p class="text-xs italic mb-2">April 2025</p>
+                <a href="#" class="text-red-700 font-medium underline"></a>
+            </div>
+
+            <!-- President's Honor's List -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">President's Honor List</h3>
+                <p class="text-gray-600 text-sm mb-2">Monroe University</p>
+                <p class="text-xs italic mb-2">Spring 2024, Fall 2024</p>
+                <p class="text-xs italic mb-2">Winter 2025</p>
+                <a href="#" class="text-red-700 font-medium underline">View</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 sm:px-12 fade-in">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Education</h2>
+        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+            Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
+        </p>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+
+            <!-- Degree -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">Associate of Science in Computer Information Systems</h3>
+                <p class="text-gray-600 text-sm mb-2">GPA: 3.9</p>
+                <p class="text-xs italic mb-2">Monroe University - August 2025</p>
+            </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+        </svg>
+    </div>
+
+    <!-- Languages Section -->
+    <section id="Laguage" class="py-20 px-6 sm:px-12 fade-in">
+        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Languages</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+        <!-- Language 1 -->
+            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                <h3 class="font-semibold text-lg">English</h3>
+                <p class="text-gray-600 text-sm mb-2">Professional</p>
+            </div>
+
+        <!-- Language 2 -->
+        <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+            <h3 class="font-semibold text-lg">Spanish</h3>
+            <p class="text-gray-600 text-sm mb-2">Native</p>
+        </div>
+
+        <!-- Language 3 -->
+        <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+            <h3 class="font-semibold text-lg">Italian</h3>
+            <p class="text-gray-600 text-sm mb-2">Professional</p>
+        </div>
+    </div>
+    </section>
+
+    <div class="relative">
+        <svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#B91C1C" d="M0,96L80,90.7C160,85,320,75,480,80C640,85,800,107,960,117.3C1120,128,1280,128,1360,128L1440,128L1440,160L1360,160C1280,160,1120,160,960,160C800,160,640,160,480,160C320,160,160,160,80,160L0,160Z"></path>
+        </svg>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center py-8 text-sm text-[#EEEEEE]">
+        <p>&copy; 2025 Paola Perez-Bryan. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
