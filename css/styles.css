@@ -4,12 +4,12 @@
 body {
   font-family: 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
 }
 
 main {
 background-color: #f3f4f6;
+margin: 2rem;
+border-radius: 3rem;
 }
 
 #header{
