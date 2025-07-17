@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+main {
+background-color: #f3f4f6;
+}
+
 #header{
   background-color: #FFFFFF;
 }

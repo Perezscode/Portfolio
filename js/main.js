@@ -82,9 +82,47 @@ window.addEventListener('scroll', () => {
   lastScrollTop = currentScroll;
 });
 
-// STAGGERED ANIMATION FOR MULTIPLE SECTIONS
-const staggeredSections = document.querySelectorAll('.fade-in-stagger');
+// FORM SUBMIT SUCCESS HANDLING
+const contactForm = document.querySelector('#contact-form');
+const statusMessage = document.querySelector('#form-status');
 
-staggeredSections.forEach((section, index) => {
-  section.style.transitionDelay = `${index * 150}ms`;
+contactForm?.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  fetch(contactForm.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    statusMessage.classList.remove('hidden');
+    setTimeout(() => {
+      statusMessage.classList.add('opacity-100');
+    }, 10);
+
+    if (response.ok) {
+      statusMessage.textContent = 'Message sent successfully! I will get back to you as soon as possible.';
+      statusMessage.classList.remove('text-red-600');
+      contactForm.reset();
+    } else {
+      statusMessage.textContent = 'Something went wrong. Please try again.';
+      statusMessage.classList.add('text-red-600');
+    }
+  })
+  .catch(error => {
+    statusMessage.classList.remove('hidden');
+    setTimeout(() => {
+      statusMessage.classList.add('opacity-100');
+    }, 10);
+    
+    statusMessage.textContent = 'Error: Unable to send message.';
+    statusMessage.classList.add('text-red-600');
+  });
 });
+
+
+
