@@ -69,37 +69,28 @@
 
         <!-- Image -->
         <div class="relative md:w-1/2 flex justify-center z-30">
-            <div class="absolute w-80 h-80 md:w-[26rem] md:h-[26rem] bg-red-200 rounded-full top-0 left-0 transform -translate-x-6 -translate-y-6 z-0"></div>
             <img src="img/headshot.png" alt="Paola Perez" class="relative z-10 w-72 h-72 md:w-[26rem] md:h-[26rem] object-cover rounded-full shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105" />
         </div>
+        <!-- STATIC Glitch Shapes - Desktop Only -->
+        <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none">
+            <!-- Red Block Top Right -->
+            <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
+            <!-- Black Vertical Bar -->
+            <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
+            <!-- Red Chunk Left of Image -->
+            <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
+        
+            <!-- Thin Red Accent Line -->
+            <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
+        
         </div>
+
     </section>
 
     <div class="relative">
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
             <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
         </svg>
-        <!-- STATIC Glitch Shapes - Desktop Only -->
-        <div class="absolute top-0 right-0 hidden lg:block z-0 pointer-events-none">
-        <!-- Red Block Top Right -->
-        <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
-
-        <!-- Black Vertical Bar -->
-        <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
-
-        <!-- Skewed Black Line -->
-        <div style="position: absolute; top: 320px; right: 150px; width: 140px; height: 6px; background-color: black; transform: rotate(-8deg);"></div>
-
-        <!-- Red Chunk Left of Image -->
-        <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
-
-        <!-- Thin Red Accent Line -->
-        <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
-
-        <!-- White Accent Outline (optional) -->
-        <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
-        </div>
-
     </div>
     
     <main class="px-4 sm:px-6 lg:px-12">
@@ -194,9 +185,6 @@
         </div>
 
         <section id="projects" class="relative py-20 px-6 sm:px-12 fade-in bg-[#FCFCFC] overflow-hidden">
-            <!-- Decorative Background Shapes -->
-            <div class="absolute -top-24 -left-20 w-80 h-80 bg-red-100 rounded-[50%] opacity-30 blur-2xl z-0"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-200 rounded-[35%] opacity-20 rotate-45 z-0"></div>
             
                 <div class="relative z-10 max-w-6xl mx-auto">
                 <h2 class="text-3xl font-bold mb-12 uppercase tracking-wide text-red-700 text-center">Portfolio Gallery</h2>
@@ -241,7 +229,7 @@
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
             <!-- STATIC Glitch Shapes - Desktop Only -->
-            <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none">
+            <div class="absolute top-0 right-0 hidden lg:block z-0 pointer-events-none">
                 <!-- Red Block Top Right -->
                 <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
 
