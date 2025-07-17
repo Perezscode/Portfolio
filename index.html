@@ -41,85 +41,37 @@
     </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="flex flex-col lg:flex-row items-center justify-center px-6 sm:px-12 py-20 fade-in gap-10 border-b border-gray-200">
+    <div id="mobile-menu" class="sm:hidden hidden flex flex-col items-center text-center px-6 pb-4 space-y-3 text-sm font-semibold uppercase">
+        <a href="#about" class="hover:text-red-700">About</a>
+        <a href="#projects" class="hover:text-red-700">Projects</a>
+        <a href="#resume" class="hover:text-red-700">Resume</a>
+        <a href="#certifications" class="hover:text-red-700">Certifications</a>
+        <a href="#contact" class="hover:text-red-700">Contact</a>
+    </div>
+    <!-- Enhanced Hero Section -->
+    <section id="hero" class="fade-in px-6 sm:px-12 py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative">
+        <!-- Decorative Shapes -->
+        <div class="absolute bottom-0 right-0 w-64 h-64 bg-red-200 rotate-45 rounded-[30%] opacity-30 z-0"></div>
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-red-100 rounded-full z-0 blur-3xl opacity-70"></div>
+
 
         <!-- Text Content -->
-        <div class="text-center lg:text-left max-w-xl">
-            <h2 class="text-4xl sm:text-5xl font-extrabold mb-4">Hello, I’m Paola!</h2>
-            <p class="text-lg sm:text-xl mb-8 text-gray-800">Web Developer and Designer based in New York City.</p>
-            <a href="#projects" class="inline-block border-2 bg-[#1D1616] text-black px-6 py-3 font-medium hover:bg-red-700 text-white transition">VIEW MY WORK</a>
+        <div class="text-center md:text-left md:w-1/2 z-10">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
+            Hello, I’m <span class="text-red-700">Paola</span>!
+            </h2>
+            <p class="text-lg text-gray-700 mb-6 max-w-md">
+            Web Developer and Designer based in New York City. Passionate about combining code with visual storytelling.
+            </p>
+            <a href="#projects" class="inline-block bg-black text-white px-6 py-3 rounded-full shadow hover:bg-red-700 transition">VIEW MY WORK</a>
         </div>
+
         <!-- Image -->
-        <div class="flex-shrink-1">
-            <img src="img/headshot.png" alt="Paola Perez" class="w-[400px] sm:w-[450px] lg:w-[600px] object-contain">
+        <div class="relative md:w-1/2 flex justify-center z-30">
+            <div class="absolute w-80 h-80 md:w-[26rem] md:h-[26rem] bg-red-200 rounded-full top-0 left-0 transform -translate-x-6 -translate-y-6 z-0"></div>
+            <img src="img/headshot.png" alt="Paola Perez" class="relative z-10 w-72 h-72 md:w-[26rem] md:h-[26rem] object-cover rounded-full shadow-xl border-4 border-white transition-transform duration-300 hover:scale-105" />
         </div>
-
-    </section>
-
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
-
-    <section id="about" class=" py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">About Me</h2>
-        <p class="text-lg text-gray-800 max-w-3xl mb-8 leading-relaxed">I'm a visual artist and aspiring front-end developer based in New York City and Currently pursuing a degree in Computer Information Systems.<br><br>
-            I bring a strong foundation in fine arts, spanning drawing, painting, and digital illustration into the world of web development.<br><br>
-            My transition into tech stems from a deep interest in how digital tools shape user experiences. I now focus on building interactive, visually intentional web projects that balance aesthetic and functionality.
-            As an immigrant, my design approach is shaped by themes of resilience, adaptability, and inclusivity.<br><br>
-            I strive to create interfaces that feel human-centered and accessible.
-            My current focus is front-end development, UX/UI design, and crafting work that bridges art, technology, and storytelling. I'm open to internships, freelance work, or collaborative opportunities that value creativity and impact.</p></p>
-        <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl">“Sometimes I feel like I’m building my future the same way I build my paintings... layer by layer.”</div>
-
-    </section>
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
-
-    <section id="projects" class="py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
-        <h2 class="text-3xl font-bold mb-10 uppercase tracking-wide text-red-700">Projects</h2>
-        
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition">
-                <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
-                <p class="text-gray-700 mb-4">A custom personal portfolio built using HTML, Tailwind, and JavaScript. Designed for recruiters with elegant, responsive design.</p>
-                <p class="text-sm text-gray-500 mb-4">Tech: HTML, Tailwind CSS, JavaScript</p>
-                <div class="space-x-4">
-                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
-                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
-                </div>
-            </div>
-            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
-                <h3 class="text-xl font-semibold mb-2">The Frame</h3>
-                <p class="text-gray-700 mb-4">A layout-focused HTML project for structured interface design. Emphasizes content flow and presentation.</p>
-                <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript</p>
-                <div class="space-x-4">
-                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
-                    <a href="https://github.com/your-username/The-Frame" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
-                </div>
-            </div>
-            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
-                <h3 class="text-xl font-semibold mb-2">NFT Preview Card</h3>
-                <p class="text-gray-700 mb-4">A responsive CSS component previewing an NFT design. Styled cleanly to match modern UI cards.</p>
-                <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS</p>
-                <div class="space-x-4">
-                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
-                    <a href="https://github.com/your-username/nft-preview-card-component-main" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
-                </div>
-            </div>
-            <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
-                <h3 class="text-xl font-semibold mb-2">Frontend Store</h3>
-                <p class="text-gray-700 mb-4">A mock store interface using clean HTML. Created to practice layout and navigation concepts.</p>
-                <p class="text-sm text-gray-500 mb-4">Tech: HTML, Bootstrap, CSS</p>
-                <div class="space-x-4">
-                    <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
-                    <a href="https://github.com/your-username/Frontend-Store" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -127,262 +79,416 @@
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
             <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
         </svg>
+        <!-- STATIC Glitch Shapes - Desktop Only -->
+        <div class="absolute top-0 right-0 hidden lg:block z-0 pointer-events-none">
+        <!-- Red Block Top Right -->
+        <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
+
+        <!-- Black Vertical Bar -->
+        <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
+
+        <!-- Skewed Black Line -->
+        <div style="position: absolute; top: 320px; right: 150px; width: 140px; height: 6px; background-color: black; transform: rotate(-8deg);"></div>
+
+        <!-- Red Chunk Left of Image -->
+        <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
+
+        <!-- Thin Red Accent Line -->
+        <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
+
+        <!-- White Accent Outline (optional) -->
+        <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
+        </div>
+
     </div>
+    
+    <main class="px-4 sm:px-6 lg:px-12">
+        <section id="about" class="relative py-20 px-6 sm:px-12 z-10 overflow-hidden">
+            
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">About Me</h2>
+            <p class="text-lg text-gray-800 max-w-3xl mb-8 leading-relaxed">I'm a visual artist and aspiring front-end developer based in New York City and Currently pursuing a degree in Computer Information Systems.<br><br>
+                I bring a strong foundation in fine arts, spanning drawing, painting, and digital illustration into the world of web development.<br><br>
+                My transition into tech stems from a deep interest in how digital tools shape user experiences. I now focus on building interactive, visually intentional web projects that balance aesthetic and functionality.
+                As an immigrant, my design approach is shaped by themes of resilience, adaptability, and inclusivity.<br><br>
+                I strive to create interfaces that feel human-centered and accessible.
+                My current focus is front-end development, UX/UI design, and crafting work that bridges art, technology, and storytelling. I'm open to internships, freelance work, or collaborative opportunities that value creativity and impact.</p></p>
+            <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl">“Sometimes I feel like I’m building my future the same way I build my paintings... layer by layer.”</div>
 
-    <section id="portfolio" class="bg-gray-100 py-12 px-6">
-        <h2 class="text-3xl font-bold text-center mb-10">Portfolio Gallery</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        </section>
 
-        <!-- Portfolio Item 1 -->
-        <div class="relative group overflow-hidden rounded-lg shadow-lg">
-            <img src="images/project1.jpg" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
-            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-4 text-center">
-                <h3 class="text-xl font-semibold mb-2">Tribute Page</h3>
-                <p class="text-sm">A single-page HTML/CSS project honoring an artist who inspired me.</p>
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
+            <!-- STATIC Glitch Shapes - Desktop Only -->
+            <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none">
+            <!-- Red Block Top Right -->
+            <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
+
+            <!-- Black Vertical Bar -->
+            <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
+
+            <!-- Skewed Black Line -->
+            <div style="position: absolute; top: 320px; right: 150px; width: 140px; height: 6px; background-color: black; transform: rotate(-8deg);"></div>
+
+            <!-- Red Chunk Left of Image -->
+            <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
+
+            <!-- Thin Red Accent Line -->
+            <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
+
+            <!-- White Accent Outline (optional) -->
+            <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
             </div>
+
         </div>
 
-        <!-- Portfolio Item 2 -->
-        <div class="relative group overflow-hidden rounded-lg shadow-lg">
-            <img src="images/project2.jpg" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
-        <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-4 text-center">
-            <h3 class="text-xl font-semibold mb-2">Survey Form</h3>
-            <p class="text-sm">Accessible form design focused on UX, created with semantic HTML.</p>
+        <section id="projects" class="py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
+            <h2 class="text-3xl font-bold mb-10 uppercase tracking-wide text-red-700">Projects</h2>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold mb-2">Portfolio Website</h3>
+                    <p class="text-gray-700 mb-4">A custom personal portfolio built using HTML, Tailwind, and JavaScript. Designed for recruiters with elegant, responsive design.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech: HTML, Tailwind CSS, JavaScript</p>
+                    <div class="space-x-4">
+                        <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                        <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">The Frame</h3>
+                    <p class="text-gray-700 mb-4">A layout-focused HTML project for structured interface design. Emphasizes content flow and presentation.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS, JavaScript</p>
+                    <div class="space-x-4">
+                        <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                        <a href="https://github.com/your-username/The-Frame" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">NFT Preview Card</h3>
+                    <p class="text-gray-700 mb-4">A responsive CSS component previewing an NFT design. Styled cleanly to match modern UI cards.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech: HTML, CSS</p>
+                    <div class="space-x-4">
+                        <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                        <a href="https://github.com/your-username/nft-preview-card-component-main" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                    </div>
+                </div>
+                <div class="bg-[#EEEEEE] p-6 rounded-lg shadow hover:shadow-md transition border-b border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">Frontend Store</h3>
+                    <p class="text-gray-700 mb-4">A mock store interface using clean HTML. Created to practice layout and navigation concepts.</p>
+                    <p class="text-sm text-gray-500 mb-4">Tech: HTML, Bootstrap, CSS</p>
+                    <div class="space-x-4">
+                        <a href="#" class="text-sm font-bold text-black hover:text-red-700 underline">Live Demo</a>
+                        <a href="https://github.com/your-username/Frontend-Store" class="text-sm font-bold text-black hover:text-red-700 underline">GitHub</a>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
         </div>
 
-        <!-- Portfolio Item 3 -->
-        <div class="relative group overflow-hidden rounded-lg shadow-lg">
-            <img src="images/project3.jpg" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
-            <div class="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center text-white p-4 text-center">
-                <h3 class="text-xl font-semibold mb-2">Landing Page</h3>
-                <p class="text-sm">A product landing page with responsive layout and call-to-action design.</p>
+        <section id="projects" class="relative py-20 px-6 sm:px-12 fade-in bg-[#FCFCFC] overflow-hidden">
+            <!-- Decorative Background Shapes -->
+            <div class="absolute -top-24 -left-20 w-80 h-80 bg-red-100 rounded-[50%] opacity-30 blur-2xl z-0"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-red-200 rounded-[35%] opacity-20 rotate-45 z-0"></div>
+            
+                <div class="relative z-10 max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-12 uppercase tracking-wide text-red-700 text-center">Portfolio Gallery</h2>
+            
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project Card 1 -->
+                    <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
+                    <img src="img/project1.jpg" alt="Project 1" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
+                        <p class="text-white text-sm text-center">Responsive portfolio site built with Tailwind and JavaScript. Includes animations and gallery features.</p>
+                    </div>
+                    </div>
+            
+                    <!-- Project Card 2 -->
+                    <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
+                    <img src="img/project2.jpg" alt="Project 2" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
+                        <p class="text-white text-sm text-center">A layout clone called “The Frame” — focusing on structure, typography, and responsive design.</p>
+                    </div>
+                    </div>
+            
+                    <!-- Project Card 3 -->
+                    <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
+                    <img src="img/project3.jpg" alt="Project 3" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
+                        <p class="text-white text-sm text-center">NFT preview card with modern UI, clean visuals, and hover effects built using HTML & Tailwind.</p>
+                    </div>
+                    </div>
+            
+                    <!-- Add More Cards Below As Needed -->
+                </div>
+            
+                <div class="text-center mt-14">
+                    <a href="#contact" class="inline-block bg-black text-white px-6 py-3 rounded-full shadow-md hover:bg-red-700 transition text-sm tracking-wide uppercase">Let's Work Together</a>
+                </div>
+                </div>
+            </section>
+
+
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
+            <!-- STATIC Glitch Shapes - Desktop Only -->
+            <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none">
+                <!-- Red Block Top Right -->
+                <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
+
+                <!-- Black Vertical Bar -->
+                <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
+
+                <!-- Skewed Black Line -->
+                <div style="position: absolute; top: 320px; right: 150px; width: 140px; height: 6px; background-color: black; transform: rotate(-8deg);"></div>
+
+                <!-- Red Chunk Left of Image -->
+                <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
+
+                <!-- Thin Red Accent Line -->
+                <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
+
+                <!-- White Accent Outline (optional) -->
+                <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
             </div>
-        </div>
-
-        <!-- Add more items as needed -->
 
         </div>
-    </section>
 
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
+        <!-- Certification Section -->
+        <section id="certifications" class="py-20 px-6 sm:px-12 fade-in">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Certifications & Badges</h2>
+            <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+                Here are some of the certifications I've completed to build my technical and leadership skills.
+            </p>
 
-    <!-- Certification Section -->
-    <section id="certifications" class="py-20 px-6 sm:px-12 fade-in">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Certifications & Badges</h2>
-        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
-            Here are some of the certifications I've completed to build my technical and leadership skills.
-        </p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+
+                <!-- CCNA: Cisco -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">CCNA: Introduction to Networks</h3>
+                    <p class="text-gray-600 text-sm mb-2">Cisco — Issued Apr 2025</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong> Ethernet, IP connectivity, IP services, IP subnetting, IPV4 & IPV6 Addressing, Network Fundamentals, Security fundamentals, Switching</p>
+                    <a href="https://www.credly.com/badges/60ca9722-14b7-4b89-8d29-1651dd94ae72" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <!-- React + TypeScript -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">React + TypeScript</h3>
+                    <p class="text-gray-600 text-sm mb-2">Udemy — Issued Apr 2025</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong> Web development fundamentals, React, TypeScript, JavaScript, CI/CD, Tanstack Query, Zustand, Jest, Playwrite, GitHub, Vercel</p>
+                    <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <!-- NSLS: Orientation and Leadership -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Orientation & Leadership Training</h3>
+                    <p class="text-gray-600 text-sm mb-2">NSLS — Issued Feb 2025</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong> Communication, Critical & creative problem-solving, Collaboration</p>
+                    <a href="https://app.nsls.org/web/public/social/share/badge/GCEERCro5LTkwdgXZ6c2Do" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Foundations of Leadership</h3>
+                    <p class="text-gray-600 text-sm mb-2">NSLS — Issued Jun 2025</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong> Cultural intelligence & diversity, Emotional Intelligence, Resilience & confidence</p>
+                    <a href="https://app.nsls.org/web/public/social/share/clr/CtZgRvGiuC7ER474Zt7gEU" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <!-- Responsive Web Design -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Responsive Web Design</h3>
+                    <p class="text-gray-600 text-sm mb-2">FreeCodeCamp — Issued May 2022</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong>HTML/CSS, Responsive layouts, Applied design & Accessibility, Advance layouts, Styling Enhancements<br> <strong>Certification Projects</strong>Tribute page, Survey form, Product landing page, Technical documentation page, Personal portfolio</p>
+                    <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <!-- Meta: Front-End Development -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Introduction to Front-End Development</h3>
+                    <p class="text-gray-600 text-sm mb-2">Meta — Issued Jun 2025</p>
+                    <p class="text-xs italic mb-2"><strong>Skills:</strong>HTML/CSS, JavaScript, JS frameworks, Bootstrap, Web development tools, User interface (UI) Design, Responsive web design, Web applications </p>
+                    <a href="#" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+
+                <!-- Microsoft Badges -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Microsoft Office Badges</h3>
+                    <p class="text-gray-600 text-sm mb-2">Cengage — Issued Jul 2025</p>
+                    <p class="text-xs italic mb-2">Excel, Word & Powerpoint Introductory Credentials</p>
+                    <a href="https://achievement.cengage.com/profile/paolaperezbryan671343/wallet" class="text-red-700 font-medium underline">Show credential</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
+        </div>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="py-20 px-6 sm:px-12 fade-in">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Leadership & Academic Archievements</h2>
+            <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+                Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+                <!-- NSLS Presidential Member -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">NSLS Inducted Presidential member</h3>
+                    <p class="text-gray-600 text-sm mb-2">National Society of Leadership and Success</p>
+                    <p class="text-xs italic mb-2">July 2025</p>
+                    <a href="#" class="text-red-700 font-medium underline">View</a>
+                </div>
+
+                <!-- NSLS-->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Honor's Program Member</h3>
+                    <p class="text-gray-600 text-sm mb-2">Monroe University</p>
+                    <p class="text-xs italic mb-2">April 2025</p>
+                    <a href="#" class="text-red-700 font-medium underline"></a>
+                </div>
+
+                <!-- President's Honor's List -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">President's Honor List</h3>
+                    <p class="text-gray-600 text-sm mb-2">Monroe University</p>
+                    <p class="text-xs italic mb-2">Spring 2024, Fall 2024</p>
+                    <p class="text-xs italic mb-2">Winter 2025</p>
+                    <a href="#" class="text-red-700 font-medium underline">View</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
+        </div>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20 px-6 sm:px-12 fade-in">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Education</h2>
+            <p class="text-gray-800 mb-8 text-lg max-w-2xl">
+                Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+
+                <!-- Degree -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">Associate of Science in Computer Information Systems</h3>
+                    <p class="text-gray-600 text-sm mb-2">GPA: 3.9</p>
+                    <p class="text-xs italic mb-2">Monroe University - August 2025</p>
+                </div>
+        </section>
+
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
+        </div>
+
+        <!-- Languages Section -->
+        <section id="Laguage" class="py-20 px-6 sm:px-12 fade-in">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Languages</h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
+            <!-- Language 1 -->
+                <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-semibold text-lg">English</h3>
+                    <p class="text-gray-600 text-sm mb-2">Professional</p>
+                </div>
 
-            <!-- CCNA: Cisco -->
+            <!-- Language 2 -->
             <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">CCNA: Introduction to Networks</h3>
-                <p class="text-gray-600 text-sm mb-2">Cisco — Issued Apr 2025</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong> Ethernet, IP connectivity, IP services, IP subnetting, IPV4 & IPV6 Addressing, Network Fundamentals, Security fundamentals, Switching</p>
-                <a href="https://www.credly.com/badges/60ca9722-14b7-4b89-8d29-1651dd94ae72" class="text-red-700 font-medium underline">Show credential</a>
+                <h3 class="font-semibold text-lg">Spanish</h3>
+                <p class="text-gray-600 text-sm mb-2">Native</p>
             </div>
 
-            <!-- React + TypeScript -->
+            <!-- Language 3 -->
             <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">React + TypeScript</h3>
-                <p class="text-gray-600 text-sm mb-2">Udemy — Issued Apr 2025</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong> Web development fundamentals, React, TypeScript, JavaScript, CI/CD, Tanstack Query, Zustand, Jest, Playwrite, GitHub, Vercel</p>
-                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-
-            <!-- NSLS: Orientation and Leadership -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Orientation & Leadership Training</h3>
-                <p class="text-gray-600 text-sm mb-2">NSLS — Issued Feb 2025</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong> Communication, Critical & creative problem-solving, Collaboration</p>
-                <a href="https://app.nsls.org/web/public/social/share/badge/GCEERCro5LTkwdgXZ6c2Do" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Foundations of Leadership</h3>
-                <p class="text-gray-600 text-sm mb-2">NSLS — Issued Jun 2025</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong> Cultural intelligence & diversity, Emotional Intelligence, Resilience & confidence</p>
-                <a href="https://app.nsls.org/web/public/social/share/clr/CtZgRvGiuC7ER474Zt7gEU" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-
-            <!-- Responsive Web Design -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Responsive Web Design</h3>
-                <p class="text-gray-600 text-sm mb-2">FreeCodeCamp — Issued May 2022</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong>HTML/CSS, Responsive layouts, Applied design & Accessibility, Advance layouts, Styling Enhancements<br> <strong>Certification Projects</strong>Tribute page, Survey form, Product landing page, Technical documentation page, Personal portfolio</p>
-                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-
-            <!-- Meta: Front-End Development -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Introduction to Front-End Development</h3>
-                <p class="text-gray-600 text-sm mb-2">Meta — Issued Jun 2025</p>
-                <p class="text-xs italic mb-2"><strong>Skills:</strong>HTML/CSS, JavaScript, JS frameworks, Bootstrap, Web development tools, User interface (UI) Design, Responsive web design, Web applications </p>
-                <a href="#" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-
-            <!-- Microsoft Badges -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Microsoft Office Badges</h3>
-                <p class="text-gray-600 text-sm mb-2">Cengage — Issued Jul 2025</p>
-                <p class="text-xs italic mb-2">Excel, Word & Powerpoint Introductory Credentials</p>
-                <a href="https://achievement.cengage.com/profile/paolaperezbryan671343/wallet" class="text-red-700 font-medium underline">Show credential</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
-
-    <!-- Leadership Section -->
-    <section id="leadership" class="py-20 px-6 sm:px-12 fade-in">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Leadership & Academic Archievements</h2>
-        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
-            Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
-        </p>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
-            <!-- NSLS Presidential Member -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">NSLS Inducted Presidential member</h3>
-                <p class="text-gray-600 text-sm mb-2">National Society of Leadership and Success</p>
-                <p class="text-xs italic mb-2">July 2025</p>
-                <a href="#" class="text-red-700 font-medium underline">View</a>
-            </div>
-
-            <!-- NSLS-->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Honor's Program Member</h3>
-                <p class="text-gray-600 text-sm mb-2">Monroe University</p>
-                <p class="text-xs italic mb-2">April 2025</p>
-                <a href="#" class="text-red-700 font-medium underline"></a>
-            </div>
-
-            <!-- President's Honor's List -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">President's Honor List</h3>
-                <p class="text-gray-600 text-sm mb-2">Monroe University</p>
-                <p class="text-xs italic mb-2">Spring 2024, Fall 2024</p>
-                <p class="text-xs italic mb-2">Winter 2025</p>
-                <a href="#" class="text-red-700 font-medium underline">View</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
-
-    <!-- Education Section -->
-    <section id="education" class="py-20 px-6 sm:px-12 fade-in">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Education</h2>
-        <p class="text-gray-800 mb-8 text-lg max-w-2xl">
-            Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.
-        </p>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
-
-            <!-- Degree -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">Associate of Science in Computer Information Systems</h3>
-                <p class="text-gray-600 text-sm mb-2">GPA: 3.9</p>
-                <p class="text-xs italic mb-2">Monroe University - August 2025</p>
-            </div>
-    </section>
-
-    <div class="relative">
-        <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
-            <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
-        </svg>
-    </div>
-
-    <!-- Languages Section -->
-    <section id="Laguage" class="py-20 px-6 sm:px-12 fade-in">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Languages</h2>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
-        <!-- Language 1 -->
-            <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-                <h3 class="font-semibold text-lg">English</h3>
+                <h3 class="font-semibold text-lg">Italian</h3>
                 <p class="text-gray-600 text-sm mb-2">Professional</p>
             </div>
-
-        <!-- Language 2 -->
-        <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-            <h3 class="font-semibold text-lg">Spanish</h3>
-            <p class="text-gray-600 text-sm mb-2">Native</p>
+        </div>
+        </section>
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
         </div>
 
-        <!-- Language 3 -->
-        <div class="bg-[#EEEEEE] p-4 rounded shadow hover:shadow-md transition">
-            <h3 class="font-semibold text-lg">Italian</h3>
-            <p class="text-gray-600 text-sm mb-2">Professional</p>
-        </div>
-    </div>
-    </section>
-    <!-- Resume Section -->
-    <section id="resume" class=" py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Resume</h2>
-        <p class="text-gray-800 mb-8 text-lg max-w-2xl">View or download my resume for a detailed look at my skills, education, and development experience.</p>
-        <a href="files/Paola-Gil-Resume.pdf" download class="inline-block bg-black text-white px-6 py-3 rounded hover:bg-red-700 transition">Download Resume</a>
-        <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">HTML5 & CSS3</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">JavaScript (ES6+)</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">React</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Tailwind CSS</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Bootstrap</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Git & GitHub</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Responsive Design</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">UX/UI Fundamentals</div>
-            <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Systems Analysis & Design</div>
-        </div>
-    </section>
+        <!-- Resume Section -->
+        <section id="resume" class="relative py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Resume</h2>
+            <p class="text-gray-800 mb-8 text-lg max-w-2xl">View or download my resume for a detailed look at my skills, education, and development experience.</p>
+            <a href="files/Paola-Gil-Resume.pdf" download class="inline-block bg-black text-white px-6 py-3 rounded hover:bg-red-700 transition">Download Resume</a>
+            <div class="mt-12 grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-gray-700">
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">HTML5 & CSS3</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">JavaScript (ES6+)</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">React</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Tailwind CSS</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Bootstrap</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Git & GitHub</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Responsive Design</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">UX/UI Fundamentals</div>
+                <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Systems Analysis & Design</div>
+            </div>
+        </section>
 
-    <section id="contact" class="py-20 px-6 sm:px-12 fade-in">
-        <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Contact</h2>
-        <form action="#" method="POST" class="max-w-2xl mb-10">
-          <div class="mb-4">
-            <label for="name" class="block text-sm font-semibold mb-1">Name</label>
-            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded" required>
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-sm font-semibold mb-1">Email</label>
-            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded" required>
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block text-sm font-semibold mb-1">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded" required></textarea>
-          </div>
-          <button type="submit" class="bg-black text-white px-6 py-3 rounded hover:bg-red-700 transition">
-            Send Message
-          </button>
-        </form>
-      
-        <div class="flex space-x-6 text-sm font-medium">
-          <a href="mailto:paperbry@gmail.com" class="text-black hover:text-red-700">📧 Email</a>
-          <a href="https://www.linkedin.com/in/paola-perez-bryan-0b47b0319/" target="_blank" class="text-black hover:text-red-700">🔗 LinkedIn</a>
-          <a href="https://github.com/Perezscode" target="_blank" class="text-black hover:text-red-700">💻 GitHub</a>
-          <a href="https://x.com/Paperbry" target="_blank" class="text-black hover:text-red-700">📱 X</a>
+        <div class="relative">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
+            </svg>
         </div>
-      </section>
-      
+
+        <section id="contact" class="py-20 px-6 sm:px-12 fade-in">
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Contact</h2>
+            <form action="#" method="POST" class="max-w-2xl mb-10">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-semibold mb-1">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-semibold mb-1">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-6">
+                <label for="message" class="block text-sm font-semibold mb-1">Message</label>
+                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded" required></textarea>
+            </div>
+            <button type="submit" class="bg-black text-white px-6 py-3 rounded hover:bg-red-700 transition">
+                Send Message
+            </button>
+            </form>
+        
+            <div class="flex space-x-6 text-sm font-medium">
+            <a href="mailto:paperbry@gmail.com" class="text-black hover:text-red-700">📧 Email</a>
+            <a href="https://www.linkedin.com/in/paola-perez-bryan-0b47b0319/" target="_blank" class="text-black hover:text-red-700">🔗 LinkedIn</a>
+            <a href="https://github.com/Perezscode" target="_blank" class="text-black hover:text-red-700">💻 GitHub</a>
+            <a href="https://x.com/Paperbry" target="_blank" class="text-black hover:text-red-700">📱 X</a>
+            </div>
+        </section>
+    </main>
+
 
     <!-- Footer -->
     <footer class="bg-black text-center py-8 text-sm text-[#EEEEEE]">
         <p>&copy; 2025 Paola Perez-Bryan. All rights reserved.</p>
     </footer>
 
+    
     <script src="js/main.js"></script>
 </body>
 </html>
