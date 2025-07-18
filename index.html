@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Paola Perez, a web developer and designer based in New York City. Showcasing projects, skills, resumer and certifications.">
     <title>Paola Perez Portfolio - Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,21 +11,18 @@
     <link rel="preconnect" href="http://www.w3.org/">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-[#FFFF] text-black font-sans">
     <header class="flex items-center justify-between flex-wrap px-6 py-4 border-b border-gray-200">
         <!-- LOGO -->
         <h1 class="text-2xl font-bold tracking-tight order-1">PAOLA <span class="text-red-700">PEREZ</span></h1>
             <!-- HAMBURGER ICON (small screens only) -->
-            <button id="menu-toggle" class="sm:hidden text-red-700 focus:outline-none order-3 ml-4">
+            <button id="menu-toggle" role="navigation" aria-label="Navigation Button"  class="sm:hidden text-red-700 focus:outline-none order-3 ml-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16" />
             </svg>
             </button>
-
             <!-- Social Media - ADD LATER -->
-
             <!-- NAVIGATION LINKS -->
             <nav id="navbar" class="w-full mt-4 hidden flex-wrap justify-end gap-4 text-sm font-semibold uppercase sm:flex sm:w-auto sm:mt-0 order-4">
                 <a href="#about" class="hover:text-red-700">About</a>
@@ -34,7 +32,6 @@
                 <a href="#contact" class="hover:text-red-700">Contact</a>
             </nav>
     </header>
-
     <!-- Mobile Menu (Vertical Row Layout) -->
     <div id="mobile-menu" class="sm:hidden hidden flex flex-col items-center text-center px-6 pb-4 space-y-3 text-sm font-semibold uppercase">
         <a href="#about" class="hover:text-red-700 border-b pb-1">About</a>
@@ -43,7 +40,6 @@
         <a href="#certifications" class="hover:text-red-700 border-b pb-1">Certifications</a>
         <a href="#contact" class="hover:text-red-700">Contact</a>
     </div>
-
     <!-- Hero Section -->
     <section id="hero" class="fade-in px-6 sm:px-12 py-20 bg-gray-100">
         <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative">
@@ -76,14 +72,12 @@
             <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
         </div>
     </section>
-
     <!-- Red line divider -->
     <div class="relative">
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
             <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
         </svg>
     </div>
-
     <main class="px-4 sm:px-6 lg:px-12">
         <!-- About Section -->
         <section id="about" class="relative py-20 px-6 sm:px-12 z-10 overflow-hidden">
@@ -96,7 +90,6 @@
                 My current focus is front-end development, UX/UI design, and crafting work that bridges art, technology, and storytelling. I'm open to internships, freelance work, or collaborative opportunities that value creativity and impact.</p>
             <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl">“Sometimes I feel like I’m building my future the same way I build my paintings... layer by layer.”</div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <!-- Red Line Divider -->
@@ -119,7 +112,6 @@
                 <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
             </div>
         </div>
-
         <!-- Projects Sections-->
         <section id="projects" class="py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
             <h2 class="text-3xl font-bold mb-10 uppercase tracking-wide text-red-700">Projects</h2>
@@ -167,14 +159,12 @@
                 </div>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Gallery Section -->
         <section id="gallery" class="relative py-20 px-6 sm:px-12 fade-in bg-[#FCFCFC] overflow-hidden">
             <!--Gallery Cards Container-->
@@ -210,7 +200,6 @@
                 </div>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <!--Red line divider-->
@@ -233,7 +222,6 @@
                 <div style="position: absolute; top: 260px; right: 200px; width: 60px; height: 60px; border: 2px solid white; transform: rotate(10deg);"></div>
             </div>
         </div>
-
         <!-- Certification Section -->
         <section id="certifications" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Certifications & Badges</h2>
@@ -292,14 +280,12 @@
                 </div>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Leadership Section -->
         <section id="leadership" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Leadership & Academic Archievements</h2>
@@ -331,14 +317,12 @@
                 </div>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Education Section -->
         <section id="education" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Education</h2>
@@ -353,14 +337,12 @@
                 </div>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Languages Section -->
         <section id="Laguage" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Languages</h2>
@@ -383,14 +365,12 @@
             </div>
         </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Resume Section -->
         <section id="resume" class="relative py-20 px-6 sm:px-12 fade-in border-b border-gray-200">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Resume</h2>
@@ -411,14 +391,12 @@
                 If you're curious and want to see more about me, <a href="#contact" target="_blank"class="text-red-700 font-medium underline">check my academic projects.</p></a>
             </div>
         </section>
-
         <!--Top Divider with shapes -->
         <div class="relative">
             <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
             </svg>
         </div>
-
         <!-- Contact Section -->
         <section id="contact" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Contact</h2>          
@@ -474,19 +452,16 @@
                 </div>
         </section>
     </main>
-
     <!--Top Divider with shapes -->
     <div class="relative">
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
             <path fill="#B91C1C" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"></path>
         </svg>
     </div>
-
     <!-- Footer -->
     <footer class="bg-black text-center py-8 text-sm text-[#EEEEEE]">
         <p>&copy; 2025 Paola Perez-Bryan. All rights reserved.</p>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 </html>
