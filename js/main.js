@@ -124,5 +124,31 @@ contactForm?.addEventListener('submit', function (e) {
   });
 });
 
+// Wait until DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.getElementById("lightbox-close");
+  const galleryImages = document.querySelectorAll(".gallery-img");
+
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.add("hidden");
+    lightboxImg.src = "";
+  }
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target === closeBtn) {
+      closeLightbox();
+    }
+  });
+});
+
 
 
