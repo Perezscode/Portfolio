@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Paola Perez, a web developer and designer based in New York City. Showcasing projects, skills, resumer and certifications.">
-    <title>Paola Perez Portfolio - Home</title>
+    <meta name="description" content="Portfolio of Paola Perez, a web developer and designer based in New York City. Showcasing projects, skills, resume and certifications.">
+    <title>Paola Perez Portfolio - Developer & Artist</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="http://www.w3.org/">
-    <nonscript>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </nonscript>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#FFFF] text-black font-sans">
+<body class="bg-white text-black font-sans">
     <header class="flex items-center justify-between flex-wrap px-6 py-4 border-b border-gray-200">
         <!-- LOGO -->
         <h1 class="text-2xl font-bold tracking-tight order-1">PAOLA <span class="text-red-700">PEREZ</span></h1>
@@ -32,7 +30,6 @@
                 <a href="#resume" class="hover:text-red-700">Resume</a>
                 <a href="#certifications" class="hover:text-red-700">Certifications</a>
                 <a href="art.html" class="hover:text-red-700 border-b pb-1">Art</a>
-                <a href="academics.html" class="hover:text-red-700 border-b pb-1">Academics</a>
                 <a href="#contact" class="hover:text-red-700">Contact</a>
             </nav>
     </header>
@@ -43,7 +40,6 @@
         <a href="#resume" class="hover:text-red-700 border-b pb-1">Resume</a>
         <a href="#certifications" class="hover:text-red-700 border-b pb-1">Certifications</a>
         <a href="art.html" class="hover:text-red-700 border-b pb-1">Art</a>
-        <a href="academics.html" class="hover:text-red-700 border-b pb-1">Academics</a>
         <a href="#contact" class="hover:text-red-700">Contact</a>
     </div>
     <!-- Hero Section -->
@@ -180,16 +176,30 @@
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
                     <!-- Card 1 -->
                     <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
-                        <img src="img/portfolio-landing-page.png" loading="lazy" width="2536" height="1390" alt="Project 1" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105">
+                        <img src="img/portfolio-landing-page.png" loading="lazy" width="2536" height="1390" alt="Project 1" class="preview-img w-full h-64 object-cover transition duration-300 group-hover:scale-105 gallery-img ">
                         <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
                             <p class="text-white text-sm text-center">Responsive portfolio site built with Tailwind and JavaScript. Includes animations and gallery features.</p>
                         </div>
                     </div>
-                    <!-- Card 1 -->
+                    <!-- Card 2 -->
                     <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
-                        <img src="img/grade-calc-screenshot.png" loading="lazy" width="2536" height="1390" alt="Project 1" class="w-full h-64 object-cover transition duration-300 group-hover:scale-105">
+                        <img src="img/grade-calc-screenshot.png" loading="lazy" width="2536" height="1390" alt="Project 2" class="preview-img w-full h-64 object-cover transition duration-300 group-hover:scale-105 gallery-img">
                         <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
                             <p class="text-white text-sm text-center">Desktop Grade Calculator App built with Python and Tkinter. Includes input validation, weighted average computation, and letter-grade output.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
+                        <img src="img/order-sum-screeshot.png" loading="lazy" width="2536" height="1390" alt="Project 3" class="preview-img w-full h-64 object-cover transition duration-300 group-hover:scale-105 gallery-img">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
+                            <p class="text-white text-sm text-center">Order Summary UI component built with HTML and CSS — clean layout, gradient background, and call-to-action button for a music subscription.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="relative group bg-white rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-1">
+                        <img src="img/tfac-fac-page.png" loading="lazy" width="2536" height="1390" alt="Project 4" class="preview-img w-full h-64 object-cover transition duration-300 group-hover:scale-105 gallery-img">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 flex items-center justify-center p-4 transition duration-300">
+                            <p class="text-white text-sm text-center">Interactive FAQ Accordion built for <strong>The Frame Art Club</strong> using clean UI principles, smooth transitions, and responsive mobile-first design. Showcases my front-end skills in layout, accessibility, and component interaction.</p>
                         </div>
                     </div>
                     <!-- Contact Link-->
@@ -199,6 +209,11 @@
                 </div>
             </div>
         </section>
+        <!-- Image Preview Modal -->
+        <div id="imageModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50" role="dialog" aria-modal="true">
+            <button data-close-modal="true" class="absolute top-5 right-6 text-white text-3xl font-bold leading-none"> &times;</button>
+            <img id="modalImage" src="" alt="Project preview" class="max-w-[90vw] max-h-[90vh] rounded-2xl shadow-2xl border border-white/20">
+        </div>
         <!--Top Divider with shapes -->
         <div class="relative">
             <!--Red line divider-->
@@ -287,7 +302,7 @@
         </div>
         <!-- Leadership Section -->
         <section id="leadership" class="py-20 px-6 sm:px-12 fade-in">
-            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Leadership & Academic Archievements</h2>
+            <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Archievements</h2>
             <p class="text-gray-800 mb-8 text-lg max-w-2xl">Every step forward, no matter how small, is proof that I'm building the future I once dreamed of.</p>
             <!-- Cards Container -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
@@ -312,7 +327,8 @@
                     <p class="text-gray-600 text-sm mb-2">This achievement reflects high academic excellence across multiple semesters.</p>
                     <a href="img/honor-sp.png" target="_blank" class="text-red-700 font-medium underline">View Spring '24</a><br>
                     <a href="img/honor-fl.png" target="_blank" class="text-red-700 font-medium underline">View Fall '24</a><br>
-                    <a href="img/honor-wn.png" target="_blank" class="text-red-700 font-medium underline">View Winter '25</a>
+                    <a href="img/honor-wn.png" target="_blank" class="text-red-700 font-medium underline">View Winter '25</a><br>
+                    <a href="img/honor-sp25.png" target="_blank" class="text-red-700 font-medium underline">View Spring '25</a>
                 </div>
             </div>
         </section>
@@ -343,7 +359,7 @@
             </svg>
         </div>
         <!-- Languages Section -->
-        <section id="Laguage" class="py-20 px-6 sm:px-12 fade-in">
+        <section id="language" class="py-20 px-6 sm:px-12 fade-in">
             <h2 class="text-3xl font-bold mb-6 uppercase tracking-wide text-red-700">Languages</h2>
             <!-- Cards Container -->
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-700">
@@ -385,10 +401,12 @@
                 <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Responsive Design</div>
                 <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">UX/UI Fundamentals</div>
                 <div class="bg-[#EEEEEE] p-4 rounded shadow text-sm font-medium">Systems Analysis & Design</div>
-            </div><br><br>
-            <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl text-gray-600">
-                If you're curious and want to see more about me, <a href="#contact" target="_blank"class="text-red-700 font-medium underline">check my academic projects.</p></a>
-            </div>
+                <div class="border-l-4 border-red-700 pl-4 text-gray-700 italic max-w-2xl text-gray-600">
+                    If you're curious and want to see more about me,
+                    <a href="#contact" class="text-red-700 font-medium underline">
+                        check my academic projects.
+                    </a>
+                </div>
         </section>
         <!--Top Divider with shapes -->
         <div class="relative">
