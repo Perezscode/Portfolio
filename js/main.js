@@ -131,6 +131,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.getElementById("lightbox-close");
   const galleryImages = document.querySelectorAll(".gallery-img");
 
+  // Only run this code on pages that actually have a lightbox
+  if (!lightbox || !lightboxImg) return;
+
   galleryImages.forEach((img) => {
     img.addEventListener("click", () => {
       lightboxImg.src = img.src;
@@ -138,17 +141,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  function closeLightbox() {
+  // Expose closeLightbox globally so HTML inline handlers can use it
+  window.closeLightbox = function () {
     lightbox.classList.add("hidden");
     lightboxImg.src = "";
-  }
+  };
 
   lightbox.addEventListener("click", (e) => {
     if (e.target === lightbox || e.target === closeBtn) {
-      closeLightbox();
+      window.closeLightbox();
     }
   });
 });
+
 
 
 
