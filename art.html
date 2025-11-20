@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Paola Perez, a web developer and artist based in New York City. Showcasing projects, skills, resume and certifications.">
-    <title>Paola Perez Portfolio - Art Gallery</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="http://www.w3.org/">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Paola Perez, a web developer and artist based in New York City. Showcasing projects, skills, resume and certifications.">
+        <title>Paola Perez Portfolio - Developer & Artist</title>
+    
+        <!-- Preload CSS -->
+        <link rel="preload" href="css/styles.css" as="style">
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <!-- Preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <!-- Load Tailwind without blocking -->
+        <script defer src="https://cdn.tailwindcss.com"></script>
+    </head>
+    
 <body class="bg-white text-black font-sans">
     <header class="flex items-center justify-between flex-wrap px-6 py-4 border-b border-gray-200">
         <!-- LOGO -->
-        <h1 class="text-2xl font-bold tracking-tight order-1">PAOLA <span class="text-red-700">PEREZ</span></h1>
+        <h1  class="text-2xl font-bold tracking-tight order-1">PAOLA <span class="text-red-700">PEREZ</span></h1>
             <!-- HAMBURGER ICON (small screens only) -->
             <button id="menu-toggle" role="navigation" aria-label="Navigation Button"  class="sm:hidden text-red-700 focus:outline-none order-3 ml-4">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -188,6 +195,6 @@
     <footer class="bg-black text-center py-8 text-sm text-[#EEEEEE]">
         <p>&copy; 2025 Paola Perez-Bryan. All rights reserved.</p>
     </footer>
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 </body>
 </html>
