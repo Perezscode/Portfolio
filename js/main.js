@@ -24,18 +24,17 @@ scrollTopBtn?.addEventListener('click', () => {
 // FADE-IN SECTIONS ON SCROLL
 const fadeInElements = document.querySelectorAll('.fade-in');
 
-const fadeInObserver = new IntersectionObserver(
-  (entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        entry.target.classList.remove('opacity-0', 'translate-y-10');
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
+const fadeInObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('opacity-100', 'translate-y-0');
+      entry.target.classList.remove('opacity-0', 'translate-y-10');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1
+});
 
 fadeInElements.forEach(el => {
   el.classList.add('opacity-0', 'translate-y-10', 'transition', 'duration-700');
@@ -44,7 +43,7 @@ fadeInElements.forEach(el => {
 
 // IMAGE TILT EFFECT ON HOVER (for project cards)
 document.querySelectorAll('.group').forEach(card => {
-  card.addEventListener('mousemove', e => {
+  card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
@@ -56,12 +55,12 @@ document.querySelectorAll('.group').forEach(card => {
   });
 });
 
-// SMOOTH SCROLL FOR SAME-PAGE ANCHORS
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// SMOOTH SCROLL FOR ANCHORS
+document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
+    e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth' });
     }
   });
@@ -73,7 +72,7 @@ const navbar = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
-  if (window.innerWidth > 768 && navbar) {
+  if (window.innerWidth > 768) {
     if (currentScroll > lastScrollTop) {
       navbar.style.transform = 'translateY(-100%)';
     } else {
@@ -95,81 +94,61 @@ contactForm?.addEventListener('submit', function (e) {
   fetch(contactForm.action, {
     method: 'POST',
     body: formData,
-    headers: { Accept: 'application/json' }
+    headers: {
+      'Accept': 'application/json'
+    }
   })
-    .then(response => {
-      statusMessage.classList.remove('hidden');
-      setTimeout(() => {
-        statusMessage.classList.add('opacity-100');
-      }, 10);
+  .then(response => {
+    statusMessage.classList.remove('hidden');
+    setTimeout(() => {
+      statusMessage.classList.add('opacity-100');
+    }, 10);
 
-      if (response.ok) {
-        statusMessage.textContent =
-          'Message sent successfully! I will get back to you as soon as possible.';
-        statusMessage.classList.remove('text-red-600');
-        contactForm.reset();
-      } else {
-        statusMessage.textContent = 'Something went wrong. Please try again.';
-        statusMessage.classList.add('text-red-600');
-      }
-    })
-    .catch(() => {
-      statusMessage.classList.remove('hidden');
-      setTimeout(() => {
-        statusMessage.classList.add('opacity-100');
-      }, 10);
-
-      statusMessage.textContent = 'Error: Unable to send message.';
+    if (response.ok) {
+      statusMessage.textContent = 'Message sent successfully! I will get back to you as soon as possible.';
+      statusMessage.classList.remove('text-red-600');
+      contactForm.reset();
+    } else {
+      statusMessage.textContent = 'Something went wrong. Please try again.';
       statusMessage.classList.add('text-red-600');
-    });
+    }
+  })
+  .catch(error => {
+    statusMessage.classList.remove('hidden');
+    setTimeout(() => {
+      statusMessage.classList.add('opacity-100');
+    }, 10);
+    
+    statusMessage.textContent = 'Error: Unable to send message.';
+    statusMessage.classList.add('text-red-600');
+  });
 });
 
-// LIGHTBOX FOR ART GALLERY (art.html)
-document.addEventListener('DOMContentLoaded', () => {
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const galleryImages = document.querySelectorAll('.gallery-img');
+// Wait until DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.getElementById("lightbox-close");
+  const galleryImages = document.querySelectorAll(".gallery-img");
 
-  if (lightbox && lightboxImg && galleryImages.length) {
-    const closeLightbox = () => {
-      lightbox.classList.add('hidden');
-      lightboxImg.src = '';
-    };
-
-    galleryImages.forEach(img => {
-      img.addEventListener('click', () => {
-        lightboxImg.src = img.src;
-        lightbox.classList.remove('hidden');
-      });
-    });
-
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox || e.target.closest('[data-lightbox-close]')) {
-        closeLightbox();
-      }
-    });
-  }
-});
-
-// IMAGE PREVIEW MODAL (index.html gallery)
-const modal = document.getElementById('imageModal');
-const modalImg = document.getElementById('modalImage');
-const previewImages = document.querySelectorAll('.preview-img');
-
-if (modal && modalImg) {
-  previewImages.forEach(img => {
-    img.addEventListener('click', () => {
-      modalImg.src = img.src;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.classList.remove("hidden");
     });
   });
 
-  modal.addEventListener('click', e => {
-    if (e.target === modal || e.target.dataset.closeModal === 'true') {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-      modalImg.src = '';
+  function closeLightbox() {
+    lightbox.classList.add("hidden");
+    lightboxImg.src = "";
+  }
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox || e.target === closeBtn) {
+      closeLightbox();
     }
   });
-}
+});
+
+
+

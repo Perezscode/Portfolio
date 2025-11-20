@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Paola Perez, a web developer and designer based in New York City. Showcasing projects, skills, resume and certifications.">
-    <title>Paola Perez Portfolio - Art Gallery</title>
+    <meta name="description" content="Portfolio of Paola Perez, a web developer and designer based in New York City. Showcasing projects, skills, resumer and certifications.">
+    <title>Paola Perez Portfolio - Home</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="http://www.w3.org/">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <nonscript>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </nonscript>
 </head>
-<body class="bg-white text-black font-sans">
+<body class="bg-[#FFFF] text-black font-sans">
     <header class="flex items-center justify-between flex-wrap px-6 py-4 border-b border-gray-200">
         <!-- LOGO -->
         <h1 class="text-2xl font-bold tracking-tight order-1">PAOLA <span class="text-red-700">PEREZ</span></h1>
@@ -30,6 +32,7 @@
                 <a href="index.html#resume" class="hover:text-red-700">Resume</a>
                 <a href="index.html#certifications" class="hover:text-red-700">Certifications</a>
                 <a href="art.html" class="hover:text-red-700 border-b pb-1">Art</a>
+                <a href="academics.html" class="hover:text-red-700 border-b pb-1">Academics</a>
                 <a href="index.html#contact" class="hover:text-red-700">Contact</a>
             </nav>
     </header>
@@ -40,25 +43,45 @@
         <a href="index.html#resume" class="hover:text-red-700">Resume</a>
         <a href="index.html#certifications" class="hover:text-red-700">Certifications</a>
         <a href="art.html" class="hover:text-red-700 border-b pb-1">Art</a>
+        <a href="academics.html" class="hover:text-red-700 border-b pb-1">Academics</a>
         <a href="index.html#contact" class="hover:text-red-700">Contact</a>
     </div>
     <!-- Hero Section -->
-    <section id="hero" class="fade-in px-6 sm:px-12 py-32 bg-cover bg-center bg-no-repeat relative" style="background-image: url('img/art/digital-1.JPG');">
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-    
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
-            <!-- Text Content -->
-            <div class="text-center md:text-left w-full md:w-3/4 text-white">
-                <!-- (rest of your hero content the same) -->
+    <section id="hero" class="fade-in px-6 sm:px-12 py-20 bg-gray-100">
+        <section id="hero" class="fade-in px-6 sm:px-12 py-32 bg-cover bg-center bg-no-repeat relative" style="background-image: url('img/art/digital-1.JPG');">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+        
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+                <!-- Text Content -->
+                <div class="text-center md:text-left w-full md:w-3/4 text-white">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+                        The Artist <span class="text-red-500">Background</span>
+                    </h2>
+                    <p class="text-lg mb-8 max-w-3xl leading-relaxed">
+                        Born in the Dominican Republic, raised in Italy, and now based in New York City, Paola Perez-Bryan is a multidisciplinary artist whose work explores themes of memory, identity, and the emotional landscapes shaped by migration. Her practice blends traditional and digital media, often centered around the human form as a mirror of internal experience.
+                        <br><br>
+                        She began her formal artistic training at Liceo Artistico Statale Emilio Greco, a fine arts high school in Catania, Sicily, where she specialized in figurative painting and drawing, with a complementary focus in graphic design. Immersed in a curriculum where art was treated as a way of life, she developed technical skills and an expressive visual language from an early age.
+                        <br><br>
+                        Today, Paola combines classical technique with digital experimentation, creating layered, emotionally resonant works that reflect the complexity of her cross-cultural identity.
+                    </p>
+                    <a href="art.html#gallery" class="inline-block bg-red-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-red-700 transition">
+                        CHECK THE GALLERY
+                    </a>
+                </div>
             </div>
+            <!-- STATIC Shapes -->
+            <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none"> 
+            <!-- Red Block Top Right -->
+            <div style="position: absolute; top: 40px; right: 100px; width: 180px; height: 20px; background-color: #B91C1C; transform: rotate(3deg);"></div>
+            <!-- Black Vertical Bar -->
+            <div style="position: absolute; top: 180px; right: 80px; width: 12px; height: 140px; background-color: black; transform: rotate(-5deg);"></div>
+            <!-- Red Chunk Left of Image -->
+            <div style="position: absolute; top: 220px; right: 260px; width: 100px; height: 30px; background-color: #B91C1C; transform: rotate(8deg);"></div>
+            <!-- Thin Red Accent Line -->
+            <div style="position: absolute; top: 140px; right: 40px; width: 120px; height: 3px; background-color: #B91C1C; transform: rotate(12deg);"></div>
         </div>
-    
-        <!-- STATIC Shapes -->
-        <div class="absolute top-0 right-0 lg:block z-0 pointer-events-none"> 
-            <!-- shapes... -->
-        </div>
-    </section>    
+    </section>
     <!-- Red line divider -->
     <div class="relative">
         <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg">
@@ -87,17 +110,17 @@
             <!-- Gallery Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <!-- Artwork 1 -->
-                <img src="img/art/digital-1.JPG" alt="Artwork 1" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img" />
+                <img src="img/art/digital-1.JPG" alt="Artwork 1" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />
                 <!-- Artwork 2 -->
-                <img src="img/art/painting-6.JPG" alt="Artwork 2" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img"  />  
+                <img src="img/art/painting-6.JPG" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />  
                 <!-- Artwork 3 -->
-                <img src="img/art/painting-3.PNG" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img"  />
+                <img src="img/art/painting-3.PNG" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />
                 <!-- Artwork 4 -->
-                <img src="img/art/painting-2.JPG" alt="Artwork 4" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img"  />
+                <img src="img/art/painting-2.JPG" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />
                 <!-- Artwork 5 -->
-                <img src="img/art/painting-4.jpg" alt="Artwork 5" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img"  />            
+                <img src="img/art/painting-4.jpg" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />            
                 <!-- Artwork 6 -->
-                <img src="img/art/painting-1.JPG" alt="Artwork 6" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105 gallery-img"  />                       
+                <img src="img/art/painting-1.JPG" alt="Artwork 3" class="cursor-pointer rounded-lg shadow-md object-cover w-full h-72 transition-transform duration-300 hover:scale-105" onclick="openLightbox(this.src)" />                       
             </div>
         </section>
         <section id="sketches" class="bg-white py-20 px-6 sm:px-12">
@@ -150,17 +173,13 @@
                 <img src="img/art/digital-2.JPG" alt="Calligraphic Sketch 2" class="rounded shadow-md object-cover w-full h-72 cursor-pointer gallery-img" />
                 <img src="img/art/sketch-7.PNG" alt="Calligraphic Sketch 3" class="rounded shadow-md object-cover w-full h-72 cursor-pointer gallery-img" />
                 <img src="img/art/sketch-8.jpg" alt="Calligraphic Sketch 4" class="rounded shadow-md object-cover w-full h-72 cursor-pointer gallery-img" />
-                <img src="img/art/sketch-9.jpg" alt="Calligraphic Sketch 5" class="rounded shadow-md object-cover w-full h-72 cursor-pointer gallery-img" />
+                <img src="img/art/sketch-9.jpg" alt="Calligraphic Sketch 4" class="rounded shadow-md object-cover w-full h-72 cursor-pointer gallery-img" />
             </div>
         </section>
         <!-- Lightbox Modal -->
-        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50">
-            <img id="lightbox-img" src="" alt="Enlarged artwork"
-                 class="max-w-full max-h-[90vh] rounded shadow-lg" />
-            <button class="absolute top-6 right-6 text-white text-3xl font-bold"
-                    data-lightbox-close="true">
-                ×
-            </button>
+        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50" onclick="closeLightbox()">
+            <img id="lightbox-img" src="" alt="Enlarged artwork" class="max-w-full max-h-[90vh] rounded shadow-lg" />
+            <button class="absolute top-6 right-6 text-white text-3xl font-bold" onclick="closeLightbox()">×</button>
         </div>
     </main>
     <!--Top Divider with shapes -->

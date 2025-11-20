@@ -1,19 +1,16 @@
-/* ---------------------------------------------------------
-  BASE STYLES
---------------------------------------------------------- */
-
+/* Your custom styles here */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
 }
 
 main {
-  background-color: #f3f4f6;
-  margin: 2rem;
-  border-radius: 3rem;
+background-color: #f3f4f6;
+margin: 2rem;
+border-radius: 3rem;
 }
 
-#header {
+#header{
   background-color: #FFFFFF;
 }
 
@@ -23,10 +20,8 @@ main {
 }
 
 
-/* ---------------------------------------------------------
-  FADE-IN ANIMATION (Controlled by JS)
---------------------------------------------------------- */
 
+/* Fade-in Animation */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -38,11 +33,7 @@ main {
   transform: translateY(0);
 }
 
-
-/* ---------------------------------------------------------
-  BUTTON / LINK INTERACTIONS
---------------------------------------------------------- */
-
+/* Button Hover Effects (glow + scale) */
 button:hover,
 a:hover.button,
 a.inline-block:hover {
@@ -51,23 +42,7 @@ a.inline-block:hover {
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: #ff0000;
-  border-color: #ff0000;
-  color: #fff;
-  box-shadow: 7px 7px 0 black;
-}
-
-button:active {
-  transform: translate(5px, 5px);
-  box-shadow: none;
-}
-
-
-/* ---------------------------------------------------------
-  UNDERLINE HOVER ANIMATION (for fancy links)
---------------------------------------------------------- */
-
+/* Link underline animation */
 a.underline {
   position: relative;
   text-decoration: none;
@@ -91,11 +66,7 @@ a.underline:hover::after {
   transform-origin: left;
 }
 
-
-/* ---------------------------------------------------------
-  TYPOGRAPHY
---------------------------------------------------------- */
-
+/* Responsive Typography */
 h1, h2, h3 {
   line-height: 1.2;
   word-break: break-word;
@@ -116,11 +87,21 @@ h3 {
 }
 
 
-/* ---------------------------------------------------------
-  INPUTS + TEXTAREAS (Contact Form)
---------------------------------------------------------- */
+input {
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+  border: 1.5px solid #000;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 3px 0 #000;
+  outline: none;
+  transition: ease 0.25s;
+}
 
-input,
+input:focus {
+  box-shadow: 5.5px 7px 0 black;
+}
+
 textarea {
   width: 100%;
   padding: 0.875rem;
@@ -132,26 +113,30 @@ textarea {
   transition: ease 0.25s;
 }
 
-input:focus,
 textarea:focus {
   box-shadow: 5.5px 7px 0 black;
 }
 
+button:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  color: #fff;
+  box-shadow: 7px 7px 0 black;
+}
 
-/* ---------------------------------------------------------
-  GRID FALLBACK (non-Tailwind browsers)
---------------------------------------------------------- */
+button:active {
+  transform: translate(5px, 5px);
+  box-shadow: none;
+}
 
+
+/* Card layout fallback for small screens */
 .grid {
   display: grid;
   gap: 1rem;
 }
 
-
-/* ---------------------------------------------------------
-  BREAKPOINTS
---------------------------------------------------------- */
-
+/* Breakpoints */
 @media (min-width: 640px) {
   h1 {
     font-size: 2.25rem;
@@ -165,18 +150,19 @@ textarea:focus {
     font-size: 1.5rem;
   }
 
-  .grid.sm\:grid-cols-2 {
+  .grid.sm\\:grid-cols-2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .sm\:px-12 {
+  .sm\\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 }
 
 @media (min-width: 768px) {
-  .grid.md\:grid-cols-3 {
+  .grid.md\\:grid-cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
